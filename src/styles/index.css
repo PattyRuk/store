@@ -1,6 +1,7 @@
 @import './footer.css';
 @import './reset.css';
 @import './header.css';
+@import './banner.css';
 
 body {
   margin: 0;

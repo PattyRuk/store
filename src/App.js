@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
+import Banner from './components/Banner';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
     <>
       <Header  />
       <main>
-
+        <Banner />
       </main>
       <Footer />
     </>
