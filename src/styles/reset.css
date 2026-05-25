@@ -1,5 +1,16 @@
 @charset "utf-8";
- 
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --dark: #1f2937;
+  --light: #f3f4f6;
+  --grey: #6b7280;
+  --light-grey: #e5e7eb;
+  --danger: #ef4444;
+  --success: #10b981;
+  --banner-bg: #e0e7ff;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
