@@ -1,1 +1,14 @@
 @import './footer.css';
+@import './reset.css';
+@import './header.css';
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  color: var(--dark);
+  background-color: #ffffff;
+}
+
+main {
+  min-height: 80vh;
+}

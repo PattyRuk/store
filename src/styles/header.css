@@ -1,0 +1,44 @@
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --dark: #1f2937;
+  --light: #f3f4f6;
+  --grey: #6b7280;
+  --light-grey: #e5e7eb;
+  --danger: #ef4444;
+  --success: #10b981;
+  --banner-bg: #e0e7ff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-logo {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+.header-logo h2 {
+  margin: 0;
+}
+
+.header nav a {
+  text-decoration: none;
+  color: var(--dark);
+  margin-left: 1.5rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.header nav a:hover {
+  color: var(--primary);
+}
