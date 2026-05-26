@@ -3,7 +3,7 @@ function Banner() {
         <section className="hero" id="home">
             <div className="hero-content">
                 <p className="hero-subtitle">Welcome to Shop</p>
-                <h1>Have a confident, minimalism, and vibrant life</h1>
+                <h1>Have a confident, minimalism, and vibrant life.</h1>
                 <p className="hero-text">
                 Explore your favorite clothes.
                 </p>
