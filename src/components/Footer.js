@@ -40,7 +40,7 @@ export default function Footer() {
       </div>
 
       <div className="footer__bottom">
-        <p className="footer__copyright">© 2026 My First Store | All Rights Reserved</p>
+        <p className="footer__copyright">© 2026 | All Rights Reserved</p>
         <div className="footer__links">
           <a href="#">Terms of Service</a>
           <a href="#">Privacy Policy</a>
