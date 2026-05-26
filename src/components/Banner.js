@@ -14,7 +14,7 @@ function Banner() {
             </div>
 
             <div className="hero-image">
-                <img src="https://images.unsplash.com/photo-1540200049848-d9813ea0e120?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                <img src="https://images.unsplash.com/photo-1540200049848-d9813ea0e120?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
             </div>
         </section>
     );
