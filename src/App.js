@@ -18,7 +18,6 @@ function App() {
       <Header  />
       <main>
         <Banner />
-        <NotFound />
       </main>
       <Footer />
     </>
