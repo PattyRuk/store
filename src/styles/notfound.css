@@ -1,0 +1,56 @@
+.not-found-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.not-found-card {
+  text-align: center;
+  background: #1a1a1a;
+  padding: 60px 40px;
+  border-radius: 20px;
+  border: 1px solid #444;
+}
+
+.code {
+  font-size: 90px;
+  font-weight: 900;
+  color: #fff;
+  margin: 0;
+}
+
+.title {
+  font-size: 24px;
+  color: #eee;
+  margin: 10px 0 5px 0;
+}
+
+.desc {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 35px;
+}
+
+.home-btn {
+  padding: 12px 30px;
+  background: #fff;
+  color: #111;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.home-btn:hover {
+  background: #ddd;
+}
