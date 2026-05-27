@@ -1,7 +1,7 @@
 .not-found-container {
   width: 100vw;
   height: 100vh;
-  background-color: #111;
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,35 +12,34 @@
 
 .not-found-card {
   text-align: center;
-  background: #1a1a1a;
+  background: #ffffff;
   padding: 60px 40px;
   border-radius: 20px;
-  border: 1px solid #444;
 }
 
 .code {
   font-size: 90px;
   font-weight: 900;
-  color: #fff;
+  color: #000;
   margin: 0;
 }
 
 .title {
   font-size: 24px;
-  color: #eee;
+  color: #000;
   margin: 10px 0 5px 0;
 }
 
 .desc {
-  color: #888;
+  color: #333;
   font-size: 16px;
   margin-bottom: 35px;
 }
 
 .home-btn {
   padding: 12px 30px;
-  background: #fff;
-  color: #111;
+  background: #42a5f5;
+  color: #fff;
   border: none;
   border-radius: 10px;
   font-size: 16px;
@@ -52,5 +51,5 @@
 }
 
 .home-btn:hover {
-  background: #ddd;
+  background: #1e88e5;
 }
