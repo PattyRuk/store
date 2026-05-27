@@ -20,6 +20,7 @@ function App() {
       <main>
         <Banner />
         <SecondBanner />
+        <ProductDetail />
       </main>
       <Footer />
     </>
