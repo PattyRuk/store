@@ -9,7 +9,10 @@ console.log('Banner is:', Banner);
 console.log('ProductCard is:', ProductCard);
 
 function Home() {
-
+  const [products, setProducts] = useState([]);
+  const [filter, setFilter] = useState('');
+  const [sort, setSort] = useState('');
+  const [loading, setLoading] = useState(true);
 
 
   return (
