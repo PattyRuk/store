@@ -15,7 +15,7 @@ const ProductDetail = ({ addToCart }) => {
   const [qty, setQty] = useState(1);
 
   useEffect(() => {
-    // FIX 1: Reset state when ID changes so old data doesn't flash
+    // Reset state when ID changes so old data doesn't show
     setProduct(null);
     setSimilar([]);
     setQty(1);
@@ -24,7 +24,7 @@ const ProductDetail = ({ addToCart }) => {
       try {
         const response = await axios.get(`${URL}/${id}`);
         
-        // FIX 2: FakeStoreAPI returns an empty string "" for IDs out of range but still in 1-20 format (e.g. deleted items)
+        // returns an empty string "" for (deleted items)
         if (!response.data || response.data === "") {
           navigate('/');
           return;
@@ -60,6 +60,31 @@ const ProductDetail = ({ addToCart }) => {
 
   return (
     <PageWrapper>
+      <div className="detail-container">
+        <div className="detail-image-wrapper">
+          <img src={product.image} alt={product.title} className="detail-image" />
+        </div>
+        <div className="detail-info">
+          <span className="detail-category">{product.category}</span>
+          <h1 className="detail-title">{product.title}</h1>
+          <p className="detail-desc">{product.description}</p>
+          <h2 className="detail-price">${product.price.toFixed(2)}</h2>
+          
+          <div className="detail-actions">
+            <label htmlFor="quantity">Quantity:</label>
+            <input 
+              id="quantity"
+              type="number" 
+              min="1" 
+              value={qty} 
+              onChange={(e) => setQty(Math.max(1, parseInt(e.target.value) || 1))} 
+              className="qty-input" 
+            />
+            <button className="btn" onClick={() => addToCart(product, qty)}>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
 
     </PageWrapper>
   );
