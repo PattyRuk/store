@@ -19,8 +19,7 @@ function App() {
       <Header  />
       <main>
         <Banner />
-        <SecondBanner />
-        <ProductDetail />
+        <Home />
       </main>
       <Footer />
     </>
