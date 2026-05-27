@@ -11,7 +11,27 @@ export default function SecondBanner() {
             <p>Dispatched globally within 24 hours</p>
             </div>
         </div>
-
+        <div className="perk-card">
+            <FaUndoAlt className="perk-icon" />
+            <div>
+            <h4>Easy Returns</h4>
+            <p>30-day transparent return pipeline</p>
+            </div>
+        </div>
+        <div className="perk-card">
+            <FaShieldAlt className="perk-icon" />
+            <div>
+            <h4>Secure Gateway</h4>
+            <p>Fully encrypted multi-token checkout</p>
+            </div>
+        </div>
+        <div className="perk-card">
+            <FaHeadset className="perk-icon" />
+            <div>
+            <h4>24/7 Support</h4>
+            <p>Instant expert assistance anytime</p>
+            </div>
+        </div>
     </div>
   );
 }
