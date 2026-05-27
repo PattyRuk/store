@@ -38,7 +38,32 @@ function Home() {
   return (
     <PageWrapper>
       <SecondBanner />
+      <div className="filter-container">
+        <select className="select-box" onChange={(e) => setFilter(e.target.value)}>
+          <option value="">All Categories</option>
+          <option value="electronics">Electronics</option>
+          <option value="jewelery">Jewelry</option>
+          <option value="men's clothing">Men's Clothing</option>
+          <option value="women's clothing">Women's Clothing</option>
+        </select>
 
+        <select className="select-box" onChange={(e) => setSort(e.target.value)}>
+          <option value="">Sort By</option>
+          <option value="name">Name (A-Z)</option>
+          <option value="price-asc">Price (Low to High)</option>
+          <option value="price-desc">Price (High to Low)</option>
+        </select>
+      </div>
+      {loading ? (
+        <div className="loading-container"><h2>Loading Products...</h2></div>
+      ) : (
+        <div className="grid">
+          {filteredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      )}
+      
     </PageWrapper>
   );
 }
