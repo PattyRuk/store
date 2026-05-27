@@ -85,7 +85,16 @@ const ProductDetail = ({ addToCart }) => {
         </div>
       </div>
 
+      <SecondBanner />
 
+      <div className="gallery-section">
+        <h3 className="gallery-title">You May Also Like</h3>
+        <div className="gallery-grid">
+          {similar.map((item) => (
+            <ProductCard key={item.id} product={item} />
+          ))}
+        </div>
+      </div>
     </PageWrapper>
   );
 };
