@@ -37,6 +37,7 @@ function Home() {
 
   return (
     <PageWrapper>
+      <Banner />
       <SecondBanner />
       <div className="filter-container">
         <select className="select-box" onChange={(e) => setFilter(e.target.value)}>
