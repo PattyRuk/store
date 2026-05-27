@@ -9,6 +9,7 @@ import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
 import Banner from './components/Banner';
+import SecondBanner from './components/SecondBanner';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Header  />
       <main>
         <Banner />
+        <SecondBanner />
       </main>
       <Footer />
     </>
