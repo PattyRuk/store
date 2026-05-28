@@ -10,10 +10,10 @@ function Home() {
   return (
     <PageWrapper>
       <Banner />
-      <LableSection />
       <SecondBanner />
-      <ProductIntro />
+      <LableSection />
       <ThirdBanner />
+      <ProductIntro />
     </PageWrapper>
   );
 }
