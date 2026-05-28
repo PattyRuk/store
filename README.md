@@ -29,3 +29,15 @@ The app has 4 main pages built with reusable components:
 * `ProductCard`: A standard layout to show item info in grids.
 * `FilterBar`: Selections to sort or filter products.
 
+## Technologies Used
+
+* **Framework**: React (using Hooks)
+* **Routing**: react-router-dom
+* **API Fetching**: axios connected to FakeStore API
+* **Animations**: framer-motion
+
+---
+## Team Members
+* **PATRICK**
+* **WEIYU** 
+* **IVAN** 
