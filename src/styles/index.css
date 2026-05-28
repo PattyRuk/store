@@ -3,6 +3,7 @@
 @import './header.css';
 @import './banner.css';
 @import './notfound.css';
+@import './cart.css';
 
 body {
   margin: 0;
