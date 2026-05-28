@@ -5,6 +5,7 @@
 @import './notfound.css';
 @import './cart.css';
 @import './productintro.css';
+@import './lablesection.css';
 
 body {
   margin: 0;
