@@ -25,13 +25,6 @@ export default function SecondBanner() {
             <p>Fully encrypted multi-token checkout</p>
             </div>
         </div>
-        <div className="perk-card">
-            <FaHeadset className="perk-icon" />
-            <div>
-            <h4>24/7 Support</h4>
-            <p>Instant expert assistance anytime</p>
-            </div>
-        </div>
     </div>
   );
 }
