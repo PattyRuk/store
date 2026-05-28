@@ -13,6 +13,7 @@ export default function Header({ cartCount }) {
         <nav className="nav-links">
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
+          <Link to="/gallery">Shop</Link>
           <Link to="/cart" className="cart-link">
             <FaShoppingBag className="cart-icon" />
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}

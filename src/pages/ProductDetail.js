@@ -85,7 +85,6 @@ const ProductDetail = ({ addToCart }) => {
         </div>
       </div>
 
-      <SecondBanner />
 
       <div className="gallery-section">
         <h3 className="gallery-title">You May Also Like</h3>
