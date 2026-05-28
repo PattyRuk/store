@@ -3,6 +3,7 @@ import Banner from '../components/Banner';
 import SecondBanner from '../components/SecondBanner';
 import ProductGallery from './ProductGallery';
 import ProductIntro from '../components/ProductIntro';
+import ThirdBanner from '../components/ThirdBanner';
 
 function Home() {
   return (
@@ -10,7 +11,7 @@ function Home() {
       <Banner />
       <SecondBanner />
       <ProductIntro />
-      <ProductGallery />
+      <ThirdBanner />
     </PageWrapper>
   );
 }
