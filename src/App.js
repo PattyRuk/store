@@ -63,7 +63,7 @@ function App() {
                 />
               }
             />
-            <Route path="/gallery" element={<ProductGallery />} />
+            <Route path="/gallery" element={<ProductGallery  addToCart={addToCart} />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
