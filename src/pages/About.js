@@ -1,4 +1,5 @@
 import StoreMap from '../components/StoreMap';
+import "../styles/about.css";
 
 function About() {
     const teamMembers = [
