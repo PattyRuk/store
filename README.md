@@ -13,3 +13,19 @@ This is a multi-page online store website. It uses React, React Router, and Axio
 * **Page Transitions**: Smooth animations when moving between different pages.
 * **Safe Routing**: Broken links or wrong URLs automatically redirect users to a safe page.
 
+## Pages
+
+The app has 4 main pages built with reusable components:
+
+* **Home (`/`)**: Features a banner slider, categories to filter items, and sorting by name or price.
+* **Product (`/product/:id`)**: Shows full item details, a quantity selector, and a gallery of 4 similar items.
+* **Cart (`/cart`)**: Lists chosen items, calculates totals, and handles the checkout view.
+* **NotFound (`*`)**: A custom 404 error page for broken links.
+
+## Main Components
+
+* `Header` / `Footer`: Top and bottom navigation bars on every page.
+* `HeroBanner`: An image slider showing store deals.
+* `ProductCard`: A standard layout to show item info in grids.
+* `FilterBar`: Selections to sort or filter products.
+
