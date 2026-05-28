@@ -3,7 +3,7 @@ import axios from 'axios';
 import PageWrapper from '../components/PageWrapper';
 import ProductCard from '../components/ProductCard';
 
-function ProductGallery() {
+function ProductGallery({addToCart}) {
   const [products, setProducts] = useState([]);
   const [filter, setFilter] = useState('');
   const [sort, setSort] = useState('');
@@ -53,7 +53,7 @@ function ProductGallery() {
       ) : (
         <div className="grid">
           {filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} addToCart={addToCart}/>
           ))}
         </div>
       )}
