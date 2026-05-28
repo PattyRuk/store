@@ -4,11 +4,13 @@ import SecondBanner from '../components/SecondBanner';
 import ProductGallery from './ProductGallery';
 import ProductIntro from '../components/ProductIntro';
 import ThirdBanner from '../components/ThirdBanner';
+import LableSection from '../components/LableSection';
 
 function Home() {
   return (
     <PageWrapper>
       <Banner />
+      <LableSection />
       <SecondBanner />
       <ProductIntro />
       <ThirdBanner />
