@@ -4,6 +4,7 @@
 @import './banner.css';
 @import './notfound.css';
 @import './cart.css';
+@import './productintro.css';
 
 body {
   margin: 0;
