@@ -32,6 +32,17 @@ function App() {
     setCart((prev) => prev.filter((item) => item.id !== id));
   };
 
+  // update quantity, remove if quantity drops to 0
+  const updateQty = (id, newQty) => {
+    if (newQty <= 0) {
+      removeFromCart(id);
+    } else {
+      setCart((prev) =>
+        prev.map((item) => (item.id === id ? { ...item, quantity: newQty } : item))
+      );
+    }
+  };
+
   const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
@@ -42,7 +53,16 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetail addToCart={addToCart} />} />
-            <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
+            <Route
+              path="/cart"
+              element={
+                <Cart
+                  cart={cart}
+                  removeFromCart={removeFromCart}
+                  updateQty={updateQty}
+                />
+              }
+            />
             <Route path="/gallery" element={<ProductGallery />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
