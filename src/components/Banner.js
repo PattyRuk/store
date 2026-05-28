@@ -5,7 +5,7 @@ function Banner() {
                 <p className="hero-subtitle">Welcome to MegaMarket</p>
                 <h1>Elevate Your Life!</h1>
                 <p className="hero-text">
-                    Explore the latest items directly pulled from our global trending catalog.
+                    Explore the latest items from our trending catalog.
                 </p>
                 <div className="hero-buttons">
                     <a href="#" className="btn-secondary-more" id="goMore">Explore More</a>
