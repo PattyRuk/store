@@ -8,7 +8,6 @@ function Banner() {
                 Explore your favorite clothes.
                 </p>
                 <div className="hero-buttons">
-                    <a href="#" className="btn-primary-about" id="openAbout">About</a>
                     <a href="#" className="btn-secondary-more" id="goMore">Explore More</a>
                 </div>
             </div>
