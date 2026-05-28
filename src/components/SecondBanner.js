@@ -1,4 +1,4 @@
-import { FaShippingFast, FaUndoAlt, FaShieldAlt, FaHeadset } from 'react-icons/fa';
+import { FaShippingFast, FaUndoAlt, FaShieldAlt} from 'react-icons/fa';
 import '../styles/banner.css';
 
 export default function SecondBanner() {
