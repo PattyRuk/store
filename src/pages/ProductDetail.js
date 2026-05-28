@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import PageWrapper from '../components/PageWrapper';
-import SecondBanner from '../components/SecondBanner';
 import ProductCard from '../components/ProductCard';
 
 const ProductDetail = ({ addToCart }) => {
@@ -90,7 +89,7 @@ const ProductDetail = ({ addToCart }) => {
         <h3 className="gallery-title">You May Also Like</h3>
         <div className="gallery-grid">
           {similar.map((item) => (
-            <ProductCard key={item.id} product={item} />
+            <ProductCard key={item.id} product={item} addToCart={addToCart}/>
           ))}
         </div>
       </div>
