@@ -10,6 +10,7 @@ import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
 import Banner from './components/Banner';
 import SecondBanner from './components/SecondBanner';
+import ProductGallery from './pages/ProductGallery';
 
 function App() {
  const [cart, setCart] = useState([]);
@@ -42,6 +43,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetail addToCart={addToCart} />} />
             <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} />} />
+            <Route path="/gallery" element={<ProductGallery />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
