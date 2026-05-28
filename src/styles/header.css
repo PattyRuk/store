@@ -10,35 +10,90 @@
   --banner-bg: #e0e7ff;
 }
 
-.header {
+/* Base Wrapper for Sticky Positioning */
+.site-header {
+  background-color: white;
+  border-bottom: 1px solid var(--light-grey);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 5%;
-  background: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 20px;
 }
 
-.header-logo {
-  text-decoration: none;
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  text-decoration: none; 
+}
+
+.logo h2 {
+  margin: 0; 
+  font-weight: 500;
   color: var(--dark);
 }
 
-.header-logo h2 {
-  margin: 0;
-}
-
-.header nav a {
-  text-decoration: none;
-  color: var(--dark);
-  margin-left: 1.5rem;
-  font-weight: 600;
-  transition: color 0.2s;
-}
-
-.header nav a:hover {
+.logo h2 strong {
   color: var(--primary);
+}
+
+.logo-icon {
+  color: var(--primary);
+  font-size: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.cart-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon {
+  font-size: 1.4rem;
+  color: var(--dark);
+  transition: color 0.2s ease-in-out;
+}
+
+.cart-link:hover .cart-icon {
+  color: var(--primary);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: var(--danger);
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 50%;
+  font-weight: bold;
+  line-height: 1; 
 }
