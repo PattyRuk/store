@@ -23,7 +23,7 @@ const LabelSection = () => {
   ];
 
   return (
-    <section className="label-section">
+    <section id="categories" className="label-section">
         <h2 className="label-section-title">Trending Categories</h2>
         <div className="label-grid">
         {categories.map((item) => (
