@@ -11,10 +11,6 @@ function About() {
             description: "Reliable shipping to get your order to you quickly."
         },
         {
-            title: "Secure Payments",
-            description: "Safe and secure checkout experience."
-        },
-        {
             title: "Customer Support",
             description: "Dedicated support whenever you need assistance."
         }
@@ -31,7 +27,7 @@ function About() {
             <section className="about-hero">
                 <h1>About MEGAMARKET</h1>
                 <p>
-                    Inspired by modern sportswear brands, MegaMarket delivers
+                    Inspired by modern brands, MEGAMARKET delivers
                     quality products, innovative designs, and an exceptional
                     shopping experience.
                 </p>
@@ -107,38 +103,6 @@ function About() {
                     <h2>99%</h2>
                     <p>Customer Satisfaction</p>
                 </div>
-            </section>
-
-            <section>
-                <h2>Meet Our Team</h2>
-
-                <div className="team-container">
-                    {teamMembers.map((member, index) => (
-                        <div key={index} className="team-card">
-                            <h3>{member.name}</h3>
-                            <p>{member.role}</p>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
-            <section className="contact-section">
-                <h2>Contact Us</h2>
-                <p>
-                    Have a question or suggestion? We'd love to hear from you.
-                </p>
-
-                <form className="contact-form">
-                    <input type="text" placeholder="Full Name" required/>
-                    <input type="email" placeholder="Email Address" required/>
-                    <input type="text" placeholder="Subject"/>
-
-                    <textarea rows="6" placeholder="Your Message" required></textarea>
-
-                    <button type="submit">
-                        Send Message
-                    </button>
-                </form>
             </section>
         </main>
     );

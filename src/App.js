@@ -8,10 +8,9 @@ import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
 import NotFound from './pages/NotFound';
-import Banner from './components/Banner';
-import SecondBanner from './components/SecondBanner';
 import ProductGallery from './pages/ProductGallery';
 import About from './pages/About';
+import ContactUs from './pages/ContactUs';
 
 function App() {
  const [cart, setCart] = useState([]);
@@ -53,6 +52,7 @@ function App() {
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<ContactUs />} />
             <Route path="/home" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetail addToCart={addToCart} />} />
             <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} updateQty={updateQty}/>}/>

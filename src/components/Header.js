@@ -11,9 +11,9 @@ export default function Header({ cartCount }) {
          <h2>MEGA<strong>MARKET</strong></h2> 
         </Link>
         <nav className="nav-links">
-          <Link to="/home">Home</Link>
-          <Link to="/about">About</Link>
           <Link to="/gallery">Shop</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact Us</Link>
           <Link to="/cart" className="cart-link">
             <FaShoppingBag className="cart-icon" />
             {cartCount > 0 && <span className="cart-badge">{cartCount}</span>}
