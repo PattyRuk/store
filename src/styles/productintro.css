@@ -6,11 +6,11 @@
 }
 
 .section-title {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--dark);
   text-align: center;
-  margin-bottom: 2.5rem;
+  margin: 3.5rem;
 }
 
 .product-intro-grid {
@@ -81,7 +81,7 @@
 }
 
 .star {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   line-height: 1;
 }
 .star.full { color: #f59e0b; }
