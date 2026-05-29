@@ -1,3 +1,299 @@
 @charset "utf-8";
 @import "./reset.css";
 
+.about {
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        #f8f9fa,
+        #ffffff,
+        #f3f4f6
+    );
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.about-hero {
+    text-align: center;
+    padding: 10rem 2rem;
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, .65),
+            rgba(0, 0, 0, .65)
+        ),
+        url("https://images.unsplash.com/photo-1542291026-7eec264c27ff");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.about-hero h1 {
+    font-size: 6rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin-bottom: 2rem;
+}
+
+.about-hero p {
+    max-width: 900px;
+    margin: auto;
+    font-size: 1.8rem;
+    line-height: 2;
+    font-weight: 500;
+    color: #f1f1f1;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    color: #111;
+}
+
+.about-story {
+    max-width: 1200px;
+    margin: 7rem auto;
+    padding: 0 2rem;
+}
+
+.about-story p {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.2;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.mission {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1300px;
+    margin: 7rem auto;
+    padding: 0 2rem;
+}
+
+.mission div {
+    background: white;
+    padding: 4rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+}
+
+.mission div:hover {
+    transform: translateY(-10px);
+}
+
+.mission h2 {
+    text-align: left;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.mission p {
+    font-size: 1.5rem;
+    line-height: 2;
+    color: #555;
+}
+
+.features {
+    max-width: 1400px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.feature-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.08);
+    transition: .3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card p {
+    font-size: 1.35rem;
+    line-height: 2;
+    color: #555;
+}
+
+.stats {
+    max-width: 1300px;
+    margin: 8rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.stat-card {
+    background: #111;
+    color: white;
+    padding: 3rem;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.stat-card h2 {
+    font-size: 4.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.stat-card p {
+    color: #ddd;
+    font-size: 1.4rem;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 5rem 0;
+    padding: 0 2rem;
+}
+
+.team-card {
+    width: 320px;
+    background: white;
+    padding: 3rem;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .08);
+    text-align: center;
+    transition: .3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+}
+
+.team-card h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.team-card p {
+    font-size: 1.3rem;
+    color: #666;
+}
+
+.contact-section {
+    max-width: 1000px;
+    margin: 8rem auto;
+    padding: 0 2rem 6rem;
+    text-align: center;
+}
+
+.contact-section p {
+    margin-bottom: 2rem;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 1.25rem;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 1.25rem;
+    transition: .3s ease;
+}
+
+.contact-form textarea {
+    min-height: 220px;
+    resize: vertical;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+}
+
+.contact-form button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 1.25rem;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.contact-form button:hover {
+    background: #222;
+    transform: translateY(-3px);
+}
+
+/* MOBILE */
+
+@media (max-width: 992px) {
+    .mission {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-hero h1 {
+        font-size: 4rem;
+    }
+
+    .about h2 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 3rem;
+    }
+
+    .about-hero p {
+        font-size: 1.2rem;
+    }
+
+    .about h2 {
+        font-size: 2.5rem;
+    }
+
+    .mission h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .team-card {
+        width: 100%;
+    }
+
+    .about-story p, .mission p, .feature-card p {
+        font-size: 1.15rem;
+    }
+}
