@@ -29,7 +29,7 @@ function About() {
     return (
         <main className="about">
             <section className="about-hero">
-                <h1>About MegaMarket</h1>
+                <h1>About MEGAMARKET</h1>
                 <p>
                     Inspired by modern sportswear brands, MegaMarket delivers
                     quality products, innovative designs, and an exceptional
