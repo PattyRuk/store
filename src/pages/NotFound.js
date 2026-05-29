@@ -9,7 +9,7 @@ const NotFoundPage = () => {
                 <h2 className="title">Page not Found</h2>
                 <p className="desc">The address you are trying to access does not exist or has expired.</p>
 
-                <Link to="/" className="home-btn">
+                <Link to="/home" className="home-btn">
                     Back To Home Page
                 </Link>
 
