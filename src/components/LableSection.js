@@ -23,8 +23,8 @@ const LabelSection = () => {
   ];
 
   return (
-    <section className="label-section">
-        <h2 className="label-section-title">Shop by Category</h2>
+    <section id="categories" className="label-section">
+        <h2 className="label-section-title">Trending Categories</h2>
         <div className="label-grid">
         {categories.map((item) => (
           <div key={item.id} className="label-card">

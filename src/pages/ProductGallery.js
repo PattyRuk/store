@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import PageWrapper from '../components/PageWrapper';
 import ProductCard from '../components/ProductCard';
+import SlideBanner from '../components/SlideBanner';
 
 function ProductGallery({addToCart}) {
   const [products, setProducts] = useState([]);
@@ -32,6 +33,7 @@ function ProductGallery({addToCart}) {
 
   return (
     <PageWrapper>
+      <SlideBanner />
       <div className="filter-container">
         <select className="select-box" onChange={(e) => setFilter(e.target.value)}>
           <option value="">All Categories</option>

@@ -323,6 +323,9 @@
   color: var(--primary);
 }
 
+.btn {
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .cart-layout {
     grid-template-columns: 1fr;
