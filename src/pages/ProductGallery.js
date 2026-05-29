@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import PageWrapper from '../components/PageWrapper';
 import ProductCard from '../components/ProductCard';
+import SlideBanner from '../components/SlideBanner';
 
-function ProductGallery() {
+function ProductGallery({addToCart}) {
   const [products, setProducts] = useState([]);
   const [filter, setFilter] = useState('');
   const [sort, setSort] = useState('');
@@ -32,6 +33,7 @@ function ProductGallery() {
 
   return (
     <PageWrapper>
+      <SlideBanner />
       <div className="filter-container">
         <select className="select-box" onChange={(e) => setFilter(e.target.value)}>
           <option value="">All Categories</option>
@@ -53,7 +55,7 @@ function ProductGallery() {
       ) : (
         <div className="grid">
           {filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} addToCart={addToCart}/>
           ))}
         </div>
       )}

@@ -1,4 +1,4 @@
-import { FaShippingFast, FaUndoAlt, FaShieldAlt, FaHeadset } from 'react-icons/fa';
+import { FaShippingFast, FaUndoAlt, FaShieldAlt} from 'react-icons/fa';
 import '../styles/banner.css';
 
 export default function SecondBanner() {
@@ -23,13 +23,6 @@ export default function SecondBanner() {
             <div>
             <h4>Secure Gateway</h4>
             <p>Fully encrypted multi-token checkout</p>
-            </div>
-        </div>
-        <div className="perk-card">
-            <FaHeadset className="perk-icon" />
-            <div>
-            <h4>24/7 Support</h4>
-            <p>Instant expert assistance anytime</p>
             </div>
         </div>
     </div>

@@ -53,17 +53,8 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetail addToCart={addToCart} />} />
-            <Route
-              path="/cart"
-              element={
-                <Cart
-                  cart={cart}
-                  removeFromCart={removeFromCart}
-                  updateQty={updateQty}
-                />
-              }
-            />
-            <Route path="/gallery" element={<ProductGallery />} />
+            <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} updateQty={updateQty}/>}/>
+            <Route path="/gallery" element={<ProductGallery  addToCart={addToCart} />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </AnimatePresence>
