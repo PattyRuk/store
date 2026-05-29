@@ -25,6 +25,7 @@
     background-size: cover;
     background-position: center;
     color: white;
+    border-radius: 10px;
 }
 
 .about-hero h1 {
