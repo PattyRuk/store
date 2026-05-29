@@ -52,8 +52,8 @@ function App() {
       <main>
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
+            <Route path="/home" element={<Home />} />
             <Route path="/product/:id" element={<ProductDetail addToCart={addToCart} />} />
             <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} updateQty={updateQty}/>}/>
             <Route path="/gallery" element={<ProductGallery  addToCart={addToCart} />} />
