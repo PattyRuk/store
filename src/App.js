@@ -11,6 +11,7 @@ import NotFound from './pages/NotFound';
 import ProductGallery from './pages/ProductGallery';
 import About from './pages/About';
 import ContactUs from './pages/ContactUs';
+import ScrollTop from './components/ScrollTop';
 
 function App() {
  const [cart, setCart] = useState([]);
@@ -50,6 +51,7 @@ function App() {
       <Header cartCount={cartCount} />
       <main>
         <AnimatePresence mode="wait">
+          <ScrollTop />
           <Routes location={location} key={location.pathname}>
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<ContactUs />} />
